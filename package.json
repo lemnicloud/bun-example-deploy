@@ -1,0 +1,20 @@
+{
+  "name": "elysia-hello-world",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --target bun --outdir ./dist",
+    "start": "NODE_ENV=production bun dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "elysia": "^2.0.0-rc.1"
+  }
+}
